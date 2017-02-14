@@ -1,0 +1,43 @@
+/*css开始*/
+.vivo_block1{
+	height: 80px;
+	width: 100%;
+	position: absolute;
+}
+.vivo_block2{
+	height: 80px;
+	width: 1400px;
+	margin: 0 auto;
+}
+.vivo_block3{
+	width: 95px;
+    height: 25px;
+    float: left;
+    margin-top: 27px;
+    background-image: url(../img/vivo-gb-logo.png);
+}
+.vivo_block4{
+	width: 700px;
+	height: 80px;
+    height: 100%;
+    display: table;
+    position: relative;
+    margin: auto;
+    line-height: 80px;
+}
+.vivo_block5{
+    display: block;
+    width: 86px;
+    height: 100%;
+    line-height: 5em;
+    white-space: nowrap;
+    font-family: FZLanTingHei-L-GBK, GothamBook, helvetica, arial, "Microsoft Yahei", 微软雅黑, sans-serif;
+    color: rgb(102, 102, 102);
+    position: relative;
+    font-weight: 200;
+    text-align: center;
+    font-size: 16px;
+    float: left;
+}
+.vivo_block2 ul li:nth-child(1){background-color: #008cd6;color: #fff;}
+.vivo_block2 ul li:hover{background-color: #008cd6;color: #fff;}
