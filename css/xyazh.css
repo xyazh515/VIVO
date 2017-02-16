@@ -39,5 +39,5 @@
     font-size: 16px;
     float: left;
 }
-#li1{background-color: #008cd6;color: #fff;}
-.vivo_block2 ul li:hover{background-color: #008cd6;color: #fff;}
+
+.vivo_block2 ul li:hover{background-color: #008cd6;color: #fff;-webkit-transition: background-color .3s ease,-webkit-transform .3s .42s ease,opacity .3s .42s ease; -moz-transition: background-color .3s ease,-moz-transform .3s .42s ease,opacity .3s .42s ease; transition: background-color .3s ease,transform .3s .42s ease,opacity .3s .42s ease;}
