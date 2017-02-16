@@ -9,22 +9,40 @@
 		 <meta name="viewport" content="width=device-width,target-densitydpi=high-dpi,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
 		 <link rel="stylesheet" type="text/css" href="css/xyazh.css" />
 		 <link rel="stylesheet" type="text/css" href="css/base.css" />
+		 <script type="text/javascript" src="js/xyz.js"></script>
 		<title></title>
 	</head>
 	<body>
 		<div class="vivo_block1">
 			<div class="vivo_block2">
 				<div class="vivo_block3"></div>
-				<ul class="vivo_block4">
-					<li class="vivo_block5" id="li1">首页</li>
-					<li class="vivo_block5">产品</li>
-					<li class="vivo_block5">商城</li>
-					<li class="vivo_block5" style="width: 115px;">体验中心</li>
-					<li class="vivo_block5" style="width: 155px;">Funtouch OS</li>
-					<li class="vivo_block5">社区</li>
-					<li class="vivo_block5">服务</li>
+				<ul class="vivo_block4" id="vivo_ul1">
+					<li class="vivo_block5">首页</li>
+					<li>产品</li>
+					<li>商城</li>
+					<li style="width: 115px;">体验中心</li>
+					<li style="width: 155px;">Funtouch OS</li>
+					<li>社区</li>
+					<li>服务</li>
 				</ul>
 			</div>
 		</div>
+		
+		
+		<script type="text/javascript">
+			var vivo_ul1=document.getElementById("vivo_ul1");
+			var vivo_li1=document.getElementsByTagName("li");
+			for(var i=0;i<7;i++){
+				vivo_li1[i].onmouseover = function(){
+					vivo_li1[0].style.backgroundColor='#FFFFFF';
+					vivo_li1[0].style.color = '#666666';
+				}
+				vivo_li1[i].onmouseout = function(){
+					vivo_li1[0].style.backgroundColor=  '#008cd6';
+					vivo_li1[0].style.color = '#fff';
+				}
+			}
+		</script>
+		
 	</body>
 </html>

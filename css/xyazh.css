@@ -2,7 +2,8 @@
 .vivo_block1{
 	height: 80px;
 	width: 100%;
-	position: absolute;
+	min-width: 1200px;
+	border-bottom: 1px #cacaca solid;
 }
 .vivo_block2{
 	height: 80px;
@@ -25,19 +26,20 @@
     margin: auto;
     line-height: 80px;
 }
-.vivo_block5{
+.vivo_block2 ul li{
     display: block;
     width: 86px;
     height: 100%;
     line-height: 5em;
     white-space: nowrap;
     font-family: FZLanTingHei-L-GBK, GothamBook, helvetica, arial, "Microsoft Yahei", 微软雅黑, sans-serif;
-    color: rgb(102, 102, 102);
     position: relative;
     font-weight: 200;
     text-align: center;
     font-size: 16px;
     float: left;
+    -webkit-transition: background-color .3s ease,-webkit-transform .3s .42s ease,opacity .3s .42s ease; -moz-transition: background-color .3s ease,-moz-transform .3s .42s ease,opacity .3s .42s ease; transition: background-color .3s ease,transform .3s .42s ease,opacity .3s .42s ease;
 }
 
-.vivo_block2 ul li:hover{background-color: #008cd6;color: #fff;-webkit-transition: background-color .3s ease,-webkit-transform .3s .42s ease,opacity .3s .42s ease; -moz-transition: background-color .3s ease,-moz-transform .3s .42s ease,opacity .3s .42s ease; transition: background-color .3s ease,transform .3s .42s ease,opacity .3s .42s ease;}
+.vivo_block5{background-color: #008cd6;color: #fff;}
+.vivo_block2 ul li:hover{background-color: #008cd6;color: #fff;}
