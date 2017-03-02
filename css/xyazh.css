@@ -76,7 +76,45 @@
 	font-size: 16px;
 	float: left;
 	list-style: none;
+	font-family: "微软雅黑";
 }
-.vivo_block8 ul li :hover
-
+.vivo_block8 ul li:hover,.vivo_block9 ul li:hover,.vivo_block10 ul li:hover{color: #008cd6;cursor: pointer;}
+.vivo_block9{
+	width: 1000px;
+	height: 20px;
+	margin-top: 30px;
+}
+.vivo_block9 ul{
+	width: 1000px;
+	height: 20px;
+}
+.vivo_block9 ul li{
+	width: 200px;
+	height: 20px;
+	line-height: 20px;
+	font-size: 14px;
+	float: left;
+	list-style: none;
+	font-family: "微软雅黑";
+	color: #666666;
+}
+.vivo_block10{
+	width: 1000px;
+	height: 20px;
+	margin-top: 10px;
+}
+.vivo_block10 ul{
+	width: 1000px;
+	height: 20px;
+}
+.vivo_block10 ul li{
+	width: 200px;
+	height: 20px;
+	line-height: 20px;
+	font-size: 14px;
+	float: left;
+	list-style: none;
+	font-family: "微软雅黑";
+	color: #666666;
+}
 
