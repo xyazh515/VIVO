@@ -9,12 +9,19 @@
 		 <meta name="viewport" content="width=device-width,target-densitydpi=high-dpi,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
 		 <link rel="stylesheet" type="text/css" href="css/xyazh.css" />
 		 <link rel="stylesheet" type="text/css" href="css/base.css" />
+		 <script src="http://libs.baidu.com/jquery/2.0.0/jquery.min.js"></script>
+		 <script src="js/jquery.SuperSlide.2.1.1.js" type="text/javascript" charset="utf-8"></script>
 		<title></title>
 	</head>
 	<body>
 		<div class="vivo_block1">
 			<div class="vivo_block2">
 				<div class="vivo_block3"></div>
+				<div class="vivo_block12">
+					<img src="img/th.png" id="zaixiankefu" style="margin-top: 25px;cursor: pointer;"/>
+					<img src="img/th.png" style="margin-top: 25px;cursor: pointer;"/>
+					<img src="img/th.png" style="margin-top: 25px;cursor: pointer;"/>
+				</div>
 				<ul class="vivo_block4" id="vivo_ul1">
 					<li class="vivo_block5">首页</li>
 					<li id="chanpin1">产品</li>
@@ -24,7 +31,6 @@
 					<li>社区</li>
 					<li>服务</li>
 				</ul>
-				<div></div>
 			</div>
 		</div>
 		<div class="vivo_block6" id="chanpin">
@@ -85,6 +91,103 @@
 				</div>
 			</div>
 		</div>
+		<div style="clear: both;"></div>
+		<div class="vivo_block11">
+			<div id="slideBox" class="slideBox">
+				<div class="hd">
+					<ul>
+						<li></li>
+						<li></li>
+						<li></li>
+						<li></li>
+					</ul>
+				</div>
+				<div class="bd">
+					<ul>
+						<li><a href="#" target="_blank"><img src="img/banner1.png" /></a></li>
+						<li><a href="#" target="_blank"><img src="img/banner2.png" /></a></li>
+						<li><a href="#" target="_blank"><img src="img/banner3.png" /></a></li>
+						<li><a href="#" target="_blank"><img src="img/banner3.png" /></a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<script type="text/javascript">
+			jQuery(".slideBox").slide({mainCell:".bd ul",autoPlay:true});
+			document.getElementById("zaixiankefu").onmouseover=function(){
+				document.getElementById("zaixiankefu").src="img/th1.png";
+			}
+			document.getElementById("zaixiankefu").onmouseout=function(){
+				document.getElementById("zaixiankefu").src="img/th.png";
+			}
+		</script>
+		<script type="text/javascript">
+			window.onscroll = function(){
+				 var t = document.documentElement.scrollTop || document.body.scrollTop; 
+				 var h = document.getElementById("slideBox");  
+				 t=t/80;
+				h.style.WebkitFilter = 'blur('+t+'px)';
+				h.style.MozFilter = 'blur('+t+'px)';
+				h.style.msFilter = 'blur('+t+'px)';
+				h.style.filter = 'blur('+t+'px)';
+			}
+		</script>
+		
 		<script src="js/xyz.js" type="text/javascript" charset="utf-8"></script>	
+	<div style="width: 100%;background-color: #f6f7f8;">
+			
+		<div class="vivo_block13">
+			<img src="img/pic1.png" style="float: left;width: 630px;" />
+			<img src="img/pic2.jpg" style="float: left;width: 640px;height: 480px;" />
+			<img src="img/pic3.jpg" style="float: left;width: 630px;height: 480px;" />
+		</div>
+		
+		<div class="vivo_block14">
+			<div class="vivo_block15">
+				<span style="color: black;font-weight: bolder;font-size: 26px;float: left;">活动</span>
+				<div class="vivo_block16">更多 ></div>
+			</div>
+			<div class="vivo_block17">
+				<div class="vivo_block18">
+					<img src="img/pic2_1.jpg" />
+					<div class="vivo_block19">
+						<div class="vivo_block20">幸运大抽奖第6期</div>
+						<div class="vivo_block21">一起来赢X9</div>
+					</div>
+					<hr width="25px" color="#CACACA" style="margin-top: 10px;"/>
+					<div style="margin-top: 15px;font-size: 14px;color: #CACACA;">社区</div>
+				</div>	
+				<div class="vivo_block18">
+					<img src="img/pic2_2.jpg" />
+					<div class="vivo_block19">
+						<div class="vivo_block20">PO出好品味</div>
+						<div class="vivo_block21">一起来赢X9</div>
+					</div>
+					<hr width="25px" color="#CACACA" style="margin-top: 10px;"/>
+					<div style="margin-top: 15px;font-size: 14px;color: #CACACA;">社区</div>
+				</div>
+				<div class="vivo_block18">
+					<img src="img/pic2_3.jpg" />
+					<div class="vivo_block19">
+						<div class="vivo_block20">初冬送好礼</div>
+						<div class="vivo_block21">一起来赢X9</div>
+					</div>
+					<hr width="25px" color="#CACACA" style="margin-top: 10px;"/>
+					<div style="margin-top: 15px;font-size: 14px;color: #CACACA;">社区</div>
+				</div>
+				<div class="vivo_block18">
+					<img src="img/pic2_4.jpg" />
+					<div class="vivo_block19">
+						<div class="vivo_block20">X9Plus直降200</div>
+						<div class="vivo_block21">免息购买</div>
+					</div>
+					<hr width="25px" color="#CACACA" style="margin-top: 10px;"/>
+					<div style="margin-top: 15px;font-size: 14px;color: #CACACA;">商城</div>
+				</div>
+			</div>
+		</div>
+		<div style="height: 1000px;"></div>
+		
+	</div>
 	</body>
 </html>

@@ -1,9 +1,21 @@
 /*css开始*/
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  font-family: FZLanTingHei-L-GBK, GothamBook, helvetica, arial, "Microsoft Yahei", 微软雅黑, sans-serif; }
 .vivo_block1{
 	height: 80px;
 	width: 100%;
 	min-width: 1400px;
 	border-bottom: 1px #cacaca solid;
+	position: fixed;
+	top: 0;
+	z-index: 9999;
+	background-color: #FFFFFF;
+	filter:alpha(opacity=95); /*IE滤镜，透明度50%*/
+	-moz-opacity:0.95; /*Firefox私有，透明度50%*/
+	opacity:0.95;/*其他，透明度50%*/
 }
 .vivo_block2{
 	height: 80px;
@@ -48,12 +60,15 @@
 
 .vivo_block6{
 	width: 100%;
+	min-width: 1400px;
 	height: 290px;
 	background-color: #FFFFFF;
-	z-index: 99999;
-	opacity: 0.8;
-	position: absolute;
+	z-index: 99;
+	opacity: 0.98;
+	position: fixed;
 	display: none;
+	top: 80px;
+	
 }
 .vivo_block7{
 	width: 1000px;
@@ -117,4 +132,133 @@
 	font-family: "微软雅黑";
 	color: #666666;
 }
+.vivo_block12{
+	height: 80px;
+    position: relative;
+    line-height: 80px;
+    float: right;
+}
+.vivo_block11 {
+	width: 100%;
+  	min-width: 1400px;
+  	height: 800px; 
+  	overflow: hidden;
+  	position: fixed;
+  	top: 80px;
+  	margin: 0 auto;
+  	z-index: -99;
+}
+.slideBox {
+  width: 100%;
+  height: 800px;
+  overflow: hidden;
+  position: relative;
+  border: 1px solid #ddd;
+  margin: 0 auto; }
+ .slideBox .hd {
+  height: 15px;
+  overflow: hidden;
+  position: absolute;
+  right: 913px;
+  bottom: 20px;
+  z-index: 1; }
 
+.slideBox .hd ul {
+  overflow: hidden;
+  zoom: 1;
+  float: left; }
+
+.slideBox .hd ul li {
+  float: left;
+  margin-right: 15px;
+  width: 10px;
+  height: 10px;
+  line-height: 10px;
+  text-align: center;
+  background: #fff;
+  cursor: pointer; 
+  border-radius: 10px;
+  background-color: #CACACA;
+  }
+
+.slideBox .hd ul li.on {
+  background: #008CD6;
+  width: 12px;
+  height: 12px;
+}
+
+.slideBox .bd {
+  position: relative;
+  height: 100%;
+  z-index: 0; }
+
+.slideBox .bd li {
+  zoom: 1;
+  vertical-align: middle; }
+
+.slideBox .bd img {
+  width: 100%;
+  height: 800px;
+  display: block; }
+
+
+.vivo_block13{
+	height: 480px;
+	width: 1900px;
+	min-width: 1400px;
+	margin-top: 880px;
+}
+.vivo_block14{
+	width: 1400px;
+	margin: 0 auto;
+	margin-top: 100px;
+}
+.vivo_block15{
+	width: 1400px;
+	height: 30px;
+	line-height: 30px;
+	color: #008CD6;
+}
+.vivo_block16{
+	width: 60px;
+	height: 30px;
+	line-height: 30px;
+	color: #cacaca;
+	border: 1px #cacaca solid;
+	border-radius: 15px;
+	text-align: center;
+	float: left;
+	margin-left: 20px;
+}
+.vivo_block16:hover{color: #008CD6;border-color: #008CD6;cursor: pointer;}
+.vivo_block17{
+	width: 1400px;
+	height: 310px;
+	margin-top: 40px;
+}
+.vivo_block18{
+	width: 340px;
+	height: 310px;
+	float: left;
+	margin-right: 10px;
+}
+.vivo_block19{
+	width: 340px;
+	height: 45px;
+	margin-top: 20px;
+}
+.vivo_block19:hover{color: #008CD6;cursor: pointer;}
+.vivo_block20{
+	width: 340px;
+	height: 25px;
+	line-height: 25px;
+	font-size: 17px;
+	color: black;
+}
+.vivo_block21{
+	width: 340px;
+	height: 20px;
+	line-height: 20px;
+	font-size: 15px;
+	color: #666666;
+}
