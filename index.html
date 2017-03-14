@@ -121,17 +121,7 @@
 				document.getElementById("zaixiankefu").src="img/th.png";
 			}
 		</script>
-		<script type="text/javascript">
-			window.onscroll = function(){
-				 var t = document.documentElement.scrollTop || document.body.scrollTop; 
-				 var h = document.getElementById("slideBox");  
-				 t=t/80;
-				h.style.WebkitFilter = 'blur('+t+'px)';
-				h.style.MozFilter = 'blur('+t+'px)';
-				h.style.msFilter = 'blur('+t+'px)';
-				h.style.filter = 'blur('+t+'px)';
-			}
-		</script>
+		
 		
 		<script src="js/xyz.js" type="text/javascript" charset="utf-8"></script>	
 	<div style="width: 100%;background-color: #f6f7f8;">
@@ -185,9 +175,28 @@
 					<div style="margin-top: 15px;font-size: 14px;color: #CACACA;">商城</div>
 				</div>
 			</div>
-		</div>
-		<div style="height: 1000px;"></div>
-		
+		</div>	
+		<div style="height: 40px;"></div>
 	</div>
+	<div style="height: 350px;filter:alpha(opacity=0);-moz-opacity:0;opacity: 0;"></div>
+	<div class="vivo_block22" id="bottom1"></div>
+	<script type="text/javascript">
+			window.onscroll = function(){
+				 var t = document.documentElement.scrollTop || document.body.scrollTop; 
+				 var h = document.getElementById("slideBox"); 
+				 var h1 = document.getElementById("bottom1");
+				 t=t/80;
+				h.style.WebkitFilter = 'blur('+t+'px)';
+				h.style.MozFilter = 'blur('+t+'px)';
+				h.style.msFilter = 'blur('+t+'px)';
+				h.style.filter = 'blur('+t+'px)';
+				  
+				 if(t>6){
+				 	h1.style.zIndex=-9;
+				 }
+				 else{
+				 h1.style.zIndex=-999;}
+			}
+		</script>
 	</body>
 </html>

@@ -262,3 +262,12 @@
 	font-size: 15px;
 	color: #666666;
 }
+.vivo_block22{
+	height: 350px;
+	width: 100%;
+	min-width: 1400px;
+	background-image: url(../img/bcp.png);
+	position: fixed;
+	bottom: 0px;
+	z-index: -999;
+}
